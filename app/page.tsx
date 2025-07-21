@@ -11,12 +11,12 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="pt-16 xs:pt-20 sm:pt-24">
+      <main>
         <Hero />
         <Features />
         <Pricing />
-        <FAQ />
-        <Testimonials />
+        {/* <FAQ />
+        <Testimonials /> */}
         <CTABanner />
         <Footer />
       </main>

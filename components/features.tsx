@@ -1,49 +1,35 @@
 import {
-  Blocks,
   Bot,
-  ChartPie,
-  Film,
-  MessageCircle,
-  Settings2,
+  ShieldCheck,
+  MessageSquare,
+  BarChart3,
 } from "lucide-react";
 import React from "react";
 
 const features = [
   {
-    icon: Settings2,
-    title: "Customizable Layouts",
-    description:
-      "Design your space with drag-and-drop simplicity—create grids, lists, or galleries in seconds.",
-  },
-  {
-    icon: Blocks,
-    title: "Interactive Widgets",
-    description:
-      "Embed polls, quizzes, or forms to keep your audience engaged.",
-  },
-  {
     icon: Bot,
-    title: "AI-Powered Tools",
+    title: "AI-powered valuation engine",
     description:
-      "Generate summaries, auto-format content, or translate into multiple languages seamlessly.",
+      "Advanced algorithms analyze 15+ financial metrics, industry benchmarks, and market trends to provide accurate business valuations in minutes.",
   },
   {
-    icon: Film,
-    title: "Media Integrations",
+    icon: ShieldCheck,
+    title: "Risk assessment for beginners",
     description:
-      "Connect with Spotify, Instagram, or your own media library for dynamic visuals and sound.",
+      "Get a comprehensive risk score with detailed explanations of potential red flags and deal-breakers before you commit.",
   },
   {
-    icon: ChartPie,
-    title: "Advanced Analytics",
+    icon: MessageSquare,
+    title: "Custom negotiation talking points",
     description:
-      "Track engagement, clicks, and user activity with intuitive charts and reports.",
+      "Receive personalized negotiation strategies and key talking points to help you secure better deals with confidence.",
   },
   {
-    icon: MessageCircle,
-    title: "Seamless Collaboration",
+    icon: BarChart3,
+    title: "Comparable sales analysis",
     description:
-      "Comment, tag, and assign tasks directly within your documents.",
+      "Access recent sales data of similar businesses in your area and industry to validate asking prices and market conditions.",
   },
 ];
 
@@ -51,9 +37,12 @@ const Features = () => {
   return (
     <div id="features" className="w-full py-12 xs:py-20 px-6">
       <h2 className="text-3xl xs:text-4xl sm:text-5xl font-bold tracking-tight text-center">
-        Unleash Your Creativity
+        Get professional analysis in minutes, not weeks
       </h2>
-      <div className="w-full max-w-screen-lg mx-auto mt-10 sm:mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <p className="text-center text-lg text-muted-foreground mt-4 max-w-2xl mx-auto">
+        Everything you need to make confident buying decisions and avoid costly mistakes
+      </p>
+      <div className="w-full max-w-screen-lg mx-auto mt-10 sm:mt-16 grid sm:grid-cols-2 gap-6">
         {features.map((feature) => (
           <div
             key={feature.title}

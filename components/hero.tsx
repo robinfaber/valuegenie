@@ -1,43 +1,40 @@
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowUpRight, CirclePlay } from "lucide-react";
+import { Input } from "@/components/ui/input";
 import React from "react";
-import LogoCloud from "./logo-cloud";
 
 const Hero = () => {
   return (
-    <div className="min-h-[calc(100vh-6rem)] flex flex-col items-center py-20 px-6">
-      <div className="md:mt-6 flex items-center justify-center">
-        <div className="text-center max-w-2xl">
-          <Badge className="bg-primary rounded-full py-1 border-none">
-            v1.0.0 is available now! 🚀
-          </Badge>
-          <h1 className="mt-6 max-w-[20ch] text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-bold !leading-[1.2] tracking-tight">
-            Customized Shadcn UI Blocks & Components
-          </h1>
-          <p className="mt-6 max-w-[60ch] xs:text-lg">
-            Explore a collection of Shadcn UI blocks and components, ready to
-            preview and copy. Streamline your development workflow with
-            easy-to-implement examples.
-          </p>
-          <div className="mt-12 flex flex-col sm:flex-row items-center sm:justify-center gap-4">
-            <Button
-              size="lg"
-              className="w-full sm:w-auto rounded-full text-base"
-            >
-              Get Started <ArrowUpRight className="!h-5 !w-5" />
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="w-full sm:w-auto rounded-full text-base shadow-none"
-            >
-              <CirclePlay className="!h-5 !w-5" /> Watch Demo
-            </Button>
-          </div>
+    <div className="min-h-screen flex flex-col items-center justify-center py-20 px-6 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white -mt-16 pt-32">
+      <div className="text-center max-w-6xl">
+        <h1 className="text-4xl xs:text-5xl sm:text-6xl md:text-7xl font-bold !leading-[1.1] tracking-tight">
+          Don't Overpay $50K+
+          <br />
+          on Your First Business Purchase
+        </h1>
+        <p className="mt-8 text-xl xs:text-2xl text-blue-100 max-w-4xl mx-auto">
+          Get AI-powered business valuation and negotiation strategy in 30 minutes
+          <br />
+          instead of paying $5,000+ for traditional appraisals
+        </p>
+        
+        <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4 max-w-lg mx-auto">
+          <Input
+            type="email"
+            placeholder="Enter your email"
+            className="flex-1 h-12 px-4 text-base bg-white text-gray-900 border-none rounded-lg"
+          />
+          <Button
+            size="lg"
+            className="w-full sm:w-auto h-12 px-8 text-base bg-blue-500 hover:bg-blue-400 text-white rounded-lg font-semibold"
+          >
+            Get Early Access
+          </Button>
         </div>
+        
+        <p className="mt-6 text-blue-200 text-base">
+          Join <span className="font-bold text-yellow-400">2,847</span> smart buyers on our waitlist
+        </p>
       </div>
-      <LogoCloud className="mt-24 max-w-3xl mx-auto" />
     </div>
   );
 };

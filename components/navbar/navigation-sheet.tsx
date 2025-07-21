@@ -8,20 +8,13 @@ export const NavigationSheet = () => {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="outline" size="icon" className="rounded-full">
+        <Button variant="ghost" size="icon" className="text-white hover:bg-white/10">
           <Menu />
         </Button>
       </SheetTrigger>
       <SheetContent>
         <Logo />
         <NavMenu orientation="vertical" className="mt-12" />
-
-        <div className="mt-8 space-y-4">
-          <Button variant="outline" className="w-full sm:hidden">
-            Sign In
-          </Button>
-          <Button className="w-full xs:hidden">Get Started</Button>
-        </div>
       </SheetContent>
     </Sheet>
   );
