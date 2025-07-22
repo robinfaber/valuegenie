@@ -4,7 +4,7 @@ import { WaitlistForm } from "@/components/waitlist-form";
 
 const plan = {
   name: "Professional Valuation",
-  price: 199,
+  price: 99,
   description: "Everything you need for confident business buying decisions",
   features: [
     "AI-powered business valuation",

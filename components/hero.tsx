@@ -25,7 +25,7 @@ const Hero = () => {
         </div>
         
         <p className="mt-6 text-blue-200 text-base">
-          Join <span className="font-bold text-yellow-400">2,847</span> smart buyers on our waitlist
+          Join <span className="font-bold text-yellow-400">278</span> smart buyers on our waitlist
         </p>
       </div>
     </div>
