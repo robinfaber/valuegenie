@@ -3,6 +3,8 @@ import { getPostBySlug, getAllPostSlugs } from '@/lib/blog';
 import { Navbar } from "@/components/navbar";
 import { ArrowLeft } from "lucide-react";
 import Link from 'next/link';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
 interface BlogPostPageProps {
   params: Promise<{
@@ -82,10 +84,25 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           )}
 
           {/* Content */}
-          <article className="prose prose-lg prose-gray max-w-none">
-            <div className="whitespace-pre-wrap leading-relaxed text-gray-800">
+          <article className="prose prose-lg prose-gray max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-strong:text-gray-900 prose-code:text-blue-600 prose-code:bg-gray-100 prose-code:px-1 prose-code:py-0.5 prose-code:rounded">
+            <ReactMarkdown 
+              remarkPlugins={[remarkGfm]}
+              components={{
+                h1: ({children}) => <h1 className="text-3xl font-bold text-gray-900 mb-6 mt-8">{children}</h1>,
+                h2: ({children}) => <h2 className="text-2xl font-bold text-gray-900 mb-4 mt-8">{children}</h2>,
+                h3: ({children}) => <h3 className="text-xl font-bold text-gray-900 mb-3 mt-6">{children}</h3>,
+                p: ({children}) => <p className="text-gray-700 mb-4 leading-relaxed">{children}</p>,
+                ul: ({children}) => <ul className="text-gray-700 mb-4 ml-6 list-disc">{children}</ul>,
+                ol: ({children}) => <ol className="text-gray-700 mb-4 ml-6 list-decimal">{children}</ol>,
+                li: ({children}) => <li className="mb-1">{children}</li>,
+                strong: ({children}) => <strong className="font-semibold text-gray-900">{children}</strong>,
+                em: ({children}) => <em className="italic text-gray-700">{children}</em>,
+                code: ({children}) => <code className="bg-gray-100 text-blue-600 px-1 py-0.5 rounded text-sm font-mono">{children}</code>,
+                blockquote: ({children}) => <blockquote className="border-l-4 border-blue-500 pl-4 italic text-gray-600 my-4">{children}</blockquote>,
+              }}
+            >
               {post.content}
-            </div>
+            </ReactMarkdown>
           </article>
 
           {/* Navigation Footer */}
