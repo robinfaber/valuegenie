@@ -1,11 +1,6 @@
-"use client";
-
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
-import { CircleCheck, Mail } from "lucide-react";
-import { useState } from "react";
+import { CircleCheck } from "lucide-react";
+import { WaitlistForm } from "@/components/waitlist-form";
 
 const plan = {
   name: "Professional Valuation",
@@ -24,64 +19,49 @@ const plan = {
 };
 
 const Pricing = () => {
-  const [email, setEmail] = useState("");
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("Email submitted:", email);
-  };
 
   return (
     <div
       id="pricing"
-      className="flex flex-col items-center justify-center py-12 xs:py-20 px-6"
+      className="flex flex-col items-center justify-center py-12 xs:py-20 px-6 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800"
     >
-      <h1 className="text-3xl xs:text-4xl md:text-5xl font-bold text-center tracking-tight">
+      <h1 className="text-3xl xs:text-4xl md:text-5xl font-bold text-center tracking-tight text-white">
         Simple, transparent pricing
       </h1>
-      <p className="text-center text-lg text-muted-foreground mt-4 max-w-2xl mx-auto">
+      <p className="text-center text-lg text-blue-100 mt-4 max-w-2xl mx-auto">
         One comprehensive report that could save you tens of thousands
       </p>
       <div className="mt-12 max-w-md mx-auto">
-        <div className="border rounded-xl p-6 bg-background">
-          <h3 className="text-lg font-medium">{plan.name}</h3>
-          <p className="mt-2 text-4xl font-bold">
+        <div className="border border-blue-400/20 rounded-xl p-6 bg-white/10 backdrop-blur-sm">
+          <h3 className="text-lg font-medium text-white">{plan.name}</h3>
+          <p className="mt-2 text-4xl font-bold text-white">
             ${plan.price}
-            <span className="ml-1.5 text-sm text-muted-foreground font-normal">
+            <span className="ml-1.5 text-sm text-blue-200 font-normal">
               per report
             </span>
           </p>
-          <p className="mt-4 font-medium text-muted-foreground">
+          <p className="mt-4 font-medium text-blue-100">
             {plan.description}
           </p>
           
-          <Separator className="my-8" />
+          <Separator className="my-8 bg-blue-400/20" />
           <ul className="space-y-2">
             {plan.features.map((feature) => (
-              <li key={feature} className="flex items-start gap-1.5">
-                <CircleCheck className="h-4 w-4 mt-1 text-green-600" />
+              <li key={feature} className="flex items-start gap-1.5 text-white">
+                <CircleCheck className="h-4 w-4 mt-1 text-green-400" />
                 {feature}
               </li>
             ))}
           </ul>
 
-          <Separator className="my-8" />
-          <form onSubmit={handleSubmit} className="space-y-4">
-            <Input
-              type="email"
-              placeholder="Enter your email for early access"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-              className="w-full"
-            />
-            <Button type="submit" size="lg" className="w-full text-base bg-blue-600 hover:bg-blue-700">
-              <Mail className="mr-2 h-4 w-4" />
-              {plan.buttonText}
-            </Button>
-          </form>
-          <p className="mt-4 text-xs text-muted-foreground text-center">
-            We'll notify you when ValuationGenie launches
+          <Separator className="my-8 bg-blue-400/20" />
+          <WaitlistForm
+            placeholder="Enter your email for early access"
+            buttonText={plan.buttonText}
+            className="[&>div]:flex-col [&>div]:gap-4 [&_input]:w-full [&_input]:bg-white [&_input]:text-gray-900 [&_input]:border-none [&_button]:w-full [&_button]:text-base [&_button]:bg-white [&_button]:text-blue-700 [&_button]:hover:bg-blue-50"
+          />
+          <p className="mt-4 text-xs text-blue-200 text-center">
+            We'll notify you when WorthSnap launches
           </p>
         </div>
       </div>

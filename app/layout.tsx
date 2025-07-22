@@ -9,88 +9,66 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "PureLanding - Beautiful Shadcn UI Landing Page",
+  title: "WorthSnap - AI-Powered Business Valuation Tool",
   description:
-    "A beautiful landing page built with Shadcn UI, Next.js 15, Tailwind CSS, and Shadcn UI Blocks.",
+    "Don't overpay $50K+ on your first business purchase. Get professional AI-powered business valuations and avoid costly mistakes.",
   keywords: [
-    "PureLanding",
-    "PureLanding Landing Page",
-    "PureLanding Landing Page Template",
-    "PureLanding Page",
-    "Shadcn UI Landing Page",
-    "Shadcn UI Blocks",
-    "Shadcn UI",
-    "Landing Page",
-    "Tailwind CSS Landing Page",
-    "Beautiful Shadcn UI Landing Page",
-    "Next.js 15 Landing Page",
-    "Simple Landing Page",
-    "Landing Page Template",
-    "Landing Page Design",
+    "WorthSnap",
+    "Business Valuation",
+    "AI Business Valuation",
+    "First Time Business Buyer",
+    "Business Acquisition",
+    "Business Analysis",
+    "Online Business Valuation",
+    "Business Worth Calculator",
+    "Due Diligence",
+    "Business Investment",
   ],
   openGraph: {
     type: "website",
-    siteName: "PureLanding",
+    siteName: "WorthSnap",
     locale: "en_US",
-    url: "https://shadcn-landing-page.vercel.app",
-    title: "PureLanding - Beautiful Shadcn UI Landing Page",
+    url: "https://worthsnap.com",
+    title: "WorthSnap - AI-Powered Business Valuation Tool",
     description:
-      "A beautiful landing page built with Shadcn UI, Next.js 15, Tailwind CSS, and Shadcn UI Blocks.",
+      "Don't overpay $50K+ on your first business purchase. Get professional AI-powered business valuations and avoid costly mistakes.",
     images: [
       {
-        url: "/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "PureLanding Preview",
+        url: "/favicon-blue.svg",
+        width: 512,
+        height: 512,
+        alt: "WorthSnap Logo",
       },
     ],
   },
   authors: [
     {
-      name: "Akash Moradiya",
-      url: "https://shadcnui-blocks.com",
+      name: "WorthSnap Team",
+      url: "https://worthsnap.com",
     },
   ],
-  creator: "Akash Moradiya",
+  creator: "WorthSnap",
   icons: [
     {
       rel: "icon",
-      url: "/favicon.ico",
+      url: "/favicon-blue.svg",
+      type: "image/svg+xml",
+    },
+    {
+      rel: "icon",
+      url: "/favicon-blue.svg",
+      type: "image/svg+xml",
+      sizes: "any",
     },
     {
       rel: "apple-touch-icon",
-      url: "/apple-touch-icon.png",
-    },
-    {
-      rel: "icon",
-      type: "image/png",
-      url: "/favicon-32x32.png",
-      sizes: "32x32",
-    },
-    {
-      rel: "icon",
-      type: "image/png",
-      url: "/favicon-16x16.png",
-      sizes: "16x16",
-    },
-    {
-      rel: "icon",
-      type: "image/png",
-      url: "/android-chrome-192x192.png",
-      sizes: "192x192",
-    },
-    {
-      rel: "icon",
-      type: "image/png",
-      url: "/android-chrome-512x512.png",
-      sizes: "512x512",
+      url: "/favicon-blue.svg",
     },
   ],
   robots: {
     index: true,
     follow: true,
   },
-  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({

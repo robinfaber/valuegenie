@@ -1,48 +1,48 @@
 import {
-  BadgeDollarSign,
-  Route,
+  Bot,
+  Calculator,
   ShieldCheck,
-  Truck,
-  Undo2,
-  UserRoundCheck,
+  Clock,
+  DollarSign,
+  HelpCircle,
 } from "lucide-react";
 
 const faq = [
   {
-    icon: Undo2,
-    question: "What is your return policy?",
+    icon: Bot,
+    question: "How accurate is AI-powered valuation compared to traditional appraisals?",
     answer:
-      "You can return unused items in their original packaging within 30 days for a refund or exchange. Contact support for assistance.",
+      "Our AI analyzes 15+ financial metrics, industry benchmarks, and recent comparable sales to provide valuations typically within 10-15% of traditional appraisals, but in minutes instead of weeks.",
   },
   {
-    icon: Route,
-    question: "How do I track my order?",
+    icon: Calculator,
+    question: "What financial information do I need to provide?",
     answer:
-      "Track your order using the link provided in your confirmation email, or log into your account to view tracking details.",
+      "You'll need basic financials like revenue, profit margins, expenses, and growth trends. We'll guide you through exactly what's needed and help interpret seller-provided data.",
   },
   {
-    icon: Truck,
-    question: "Do you ship internationally?",
+    icon: Clock,
+    question: "How long does it take to get my valuation report?",
     answer:
-      "Yes, we ship worldwide. Shipping fees and delivery times vary by location, and customs duties may apply for some countries.",
+      "Most reports are generated within 30 minutes of submitting your information. Complex businesses may take up to 2 hours, but you'll always get results the same day.",
   },
   {
-    icon: BadgeDollarSign,
-    question: "What payment methods do you accept?",
+    icon: DollarSign,
+    question: "Is $199 really cheaper than traditional appraisals?",
     answer:
-      "We accept Visa, MasterCard, American Express, PayPal, Apple Pay, and Google Pay, ensuring secure payment options for all customers.",
+      "Yes! Traditional business appraisals typically cost $5,000-$15,000 and take 2-6 weeks. Our AI-powered reports provide professional-grade analysis at a fraction of the cost.",
   },
   {
     icon: ShieldCheck,
-    question: "What if I receive a damaged item?",
+    question: "What if the valuation doesn't match what I expected?",
     answer:
-      "Please contact our support team within 48 hours of delivery with photos of the damaged item. We’ll arrange a replacement or refund.",
+      "Our reports include detailed explanations of how we arrived at the valuation, plus red flags to watch for. We also provide negotiation strategies regardless of whether the price seems high or low.",
   },
   {
-    icon: UserRoundCheck,
-    question: "How can I contact customer support?",
+    icon: HelpCircle,
+    question: "Do I still need a lawyer or accountant after using ValuationGenie?",
     answer:
-      "Reach out via email at support@example.com or call us at 1-800-123-4567 for assistance with any inquiries.",
+      "ValuationGenie provides the financial analysis, but we always recommend having legal and tax professionals review any business purchase. Our reports actually help your advisors work more efficiently.",
   },
 ];
 
@@ -54,10 +54,10 @@ const FAQ = () => {
     >
       <div className="max-w-screen-lg">
         <h2 className="text-3xl xs:text-4xl md:text-5xl !leading-[1.15] font-bold tracking-tight text-center">
-          Frequently Asked Questions
+          Common Questions from First-Time Buyers
         </h2>
         <p className="mt-3 xs:text-lg text-center text-muted-foreground">
-          Quick answers to common questions about our products and services.
+          Everything you need to know about business valuation and our AI-powered approach.
         </p>
 
         <div className="mt-12 grid md:grid-cols-2 bg-background rounded-xl overflow-hidden outline outline-[1px] outline-border outline-offset-[-1px]">

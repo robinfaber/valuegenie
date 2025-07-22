@@ -1,6 +1,5 @@
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import React from "react";
+import { WaitlistForm } from "@/components/waitlist-form";
 
 const Hero = () => {
   return (
@@ -9,7 +8,7 @@ const Hero = () => {
         <h1 className="text-4xl xs:text-5xl sm:text-6xl md:text-7xl font-bold !leading-[1.1] tracking-tight">
           Don't Overpay $50K+
           <br />
-          on Your First Business Purchase
+          <span className="block text-blue-200">on Your First Business Purchase</span>
         </h1>
         <p className="mt-8 text-xl xs:text-2xl text-blue-100 max-w-4xl mx-auto">
           Get AI-powered business valuation and negotiation strategy in 30 minutes
@@ -17,18 +16,12 @@ const Hero = () => {
           instead of paying $5,000+ for traditional appraisals
         </p>
         
-        <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4 max-w-lg mx-auto">
-          <Input
-            type="email"
+        <div className="mt-12 max-w-lg mx-auto">
+          <WaitlistForm
             placeholder="Enter your email"
-            className="flex-1 h-12 px-4 text-base bg-white text-gray-900 border-none rounded-lg"
+            buttonText="Get Early Access"
+            className="[&_input]:h-12 [&_input]:text-base [&_input]:bg-white [&_input]:text-gray-900 [&_button]:h-12 [&_button]:px-8 [&_button]:text-base [&_button]:bg-blue-500 [&_button]:hover:bg-blue-400 [&_button]:font-semibold"
           />
-          <Button
-            size="lg"
-            className="w-full sm:w-auto h-12 px-8 text-base bg-blue-500 hover:bg-blue-400 text-white rounded-lg font-semibold"
-          >
-            Get Early Access
-          </Button>
         </div>
         
         <p className="mt-6 text-blue-200 text-base">
