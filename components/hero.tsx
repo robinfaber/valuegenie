@@ -6,7 +6,7 @@ const Hero = () => {
     <div className="min-h-screen flex flex-col items-center justify-center py-20 px-6 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white -mt-16 pt-32">
       <div className="text-center max-w-6xl">
         <h1 className="text-4xl xs:text-5xl sm:text-6xl md:text-7xl font-bold !leading-[1.1] tracking-tight">
-          Don't Overpay $50K+
+          Don&apos;t Overpay $50K+
           <br />
           <span className="block text-blue-200">on Your First Business Purchase</span>
         </h1>

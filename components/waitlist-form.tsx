@@ -57,7 +57,7 @@ export const WaitlistForm = ({
       <div className={`flex items-center justify-center gap-3 ${className}`}>
         <CheckCircle className="h-5 w-5 text-green-500" />
         <span className="text-green-600 font-medium">
-          Thanks! You're on the waitlist. We'll be in touch soon.
+          Thanks! You&apos;re on the waitlist. We&apos;ll be in touch soon.
         </span>
       </div>
     );

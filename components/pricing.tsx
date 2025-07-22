@@ -61,7 +61,7 @@ const Pricing = () => {
             className="[&>div]:flex-col [&>div]:gap-4 [&_input]:w-full [&_input]:bg-white [&_input]:text-gray-900 [&_input]:border-none [&_button]:w-full [&_button]:text-base [&_button]:bg-white [&_button]:text-blue-700 [&_button]:hover:bg-blue-50"
           />
           <p className="mt-4 text-xs text-blue-200 text-center">
-            We'll notify you when WorthSnap launches
+            We&apos;ll notify you when WorthSnap launches
           </p>
         </div>
       </div>

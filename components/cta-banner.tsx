@@ -10,7 +10,7 @@ export default function CTABanner() {
           Ready to buy with confidence?
         </h2>
         <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-          Don't let inexperience cost you thousands. Get professional-grade analysis at a fraction of the cost.
+          Don&apos;t let inexperience cost you thousands. Get professional-grade analysis at a fraction of the cost.
         </p>
         
         <div className="max-w-lg mx-auto mt-12">
