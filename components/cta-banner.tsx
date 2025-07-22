@@ -18,7 +18,7 @@ export default function CTABanner() {
             placeholder="Enter your email"
             buttonText="Join Waitlist"
             buttonIcon={<ArrowRight className="ml-1 h-4 w-4" />}
-            className="[&_input]:h-12 [&_input]:text-base [&_input]:bg-white [&_input]:text-gray-900 [&_button]:h-12 [&_button]:px-8 [&_button]:text-base [&_button]:bg-blue-500 [&_button]:hover:bg-blue-400 [&_button]:font-semibold"
+            className="[&_input]:h-12 [&_input]:text-base [&_input]:bg-white [&_input]:text-gray-900 [&_button]:h-12 [&_button]:px-8 [&_button]:text-base [&_button]:bg-blue-500 [&_button]:hover:bg-blue-400 [&_button]:text-white [&_button]:font-semibold"
           />
         </div>
       </div>
