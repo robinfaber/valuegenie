@@ -12,7 +12,7 @@ export const NavigationSheet = () => {
           <Menu />
         </Button>
       </SheetTrigger>
-      <SheetContent>
+      <SheetContent className="bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white border-blue-500">
         <Logo />
         <NavMenu orientation="vertical" className="mt-12" />
       </SheetContent>

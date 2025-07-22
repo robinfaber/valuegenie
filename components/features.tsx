@@ -35,7 +35,7 @@ const features = [
 
 const Features = () => {
   return (
-    <div id="features" className="w-full py-12 xs:py-20 px-6">
+    <div id="features" className="w-full py-12 xs:py-20 px-6 bg-white">
       <h2 className="text-3xl xs:text-4xl sm:text-5xl font-bold tracking-tight text-center">
         Get professional analysis in minutes, not weeks
       </h2>
