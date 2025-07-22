@@ -39,20 +39,20 @@ const Features = () => {
       <h2 className="text-3xl xs:text-4xl sm:text-5xl font-bold tracking-tight text-center">
         Get professional analysis in minutes, not weeks
       </h2>
-      <p className="text-center text-lg text-muted-foreground mt-4 max-w-2xl mx-auto">
+      <p className="text-center text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
         Everything you need to make confident buying decisions and avoid costly mistakes
       </p>
       <div className="w-full max-w-screen-lg mx-auto mt-10 sm:mt-16 grid sm:grid-cols-2 gap-6">
         {features.map((feature) => (
           <div
             key={feature.title}
-            className="flex flex-col bg-background border rounded-xl py-6 px-5"
+            className="flex flex-col bg-white border border-gray-200 rounded-xl py-6 px-5"
           >
-            <div className="mb-3 h-10 w-10 flex items-center justify-center bg-muted rounded-full">
+            <div className="mb-3 h-10 w-10 flex items-center justify-center bg-gray-100 rounded-full">
               <feature.icon className="h-6 w-6" />
             </div>
-            <span className="text-lg font-semibold">{feature.title}</span>
-            <p className="mt-1 text-foreground/80 text-[15px]">
+            <span className="text-lg font-semibold text-gray-900">{feature.title}</span>
+            <p className="mt-1 text-gray-600 text-[15px]">
               {feature.description}
             </p>
           </div>
