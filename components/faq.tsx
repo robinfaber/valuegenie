@@ -1,48 +1,48 @@
 import {
-  Bot,
-  Calculator,
-  ShieldCheck,
-  Clock,
+  Target,
+  Home,
+  Camera,
   DollarSign,
-  HelpCircle,
+  Shield,
+  Users,
 } from "lucide-react";
 
 const faq = [
   {
-    icon: Bot,
-    question: "How accurate is AI-powered valuation compared to traditional appraisals?",
+    icon: Target,
+    question: "How accurate is the AI assessment?",
     answer:
-      "Our AI analyzes 15+ financial metrics, industry benchmarks, and recent comparable sales to provide valuations typically within 10-15% of traditional appraisals, but in minutes instead of weeks.",
+      "Our AI achieves 85%+ accuracy by following professional occupational therapy guidelines and analyzing thousands of home safety scenarios. It's trained on real safety assessments and continuously improved by expert review.",
   },
   {
-    icon: Calculator,
-    question: "What financial information do I need to provide?",
+    icon: Home,
+    question: "I think my home is already safe - do I still need this?",
     answer:
-      "You'll need basic financials like revenue, profit margins, expenses, and growth trends. We'll guide you through exactly what's needed and help interpret seller-provided data.",
+      "Many safety hazards are invisible in familiar spaces. We often overlook risks in homes we know well - loose rugs, poor lighting, or grab bar placement issues. Fresh AI analysis can spot what familiarity causes us to miss.",
   },
   {
-    icon: Clock,
-    question: "How long does it take to get my valuation report?",
+    icon: Camera,
+    question: "What kind of photos do I need to take?",
     answer:
-      "Most reports are generated within 30 minutes of submitting your information. Complex businesses may take up to 2 hours, but you'll always get results the same day.",
+      "Any smartphone camera works perfectly. We provide simple guidance for each room - just basic shots of entryways, bathrooms, stairs, and living areas. No special equipment or photography skills needed.",
   },
   {
     icon: DollarSign,
-    question: "Is $199 really cheaper than traditional appraisals?",
+    question: "How is this different from hiring a professional?",
     answer:
-      "Yes! Traditional business appraisals typically cost $5,000-$15,000 and take 2-6 weeks. Our AI-powered reports provide professional-grade analysis at a fraction of the cost.",
+      "Professional assessments cost $300-$500 and require scheduling home visits. Our AI assessment costs $39, provides instant results, and maintains complete privacy. You get the same quality insights without strangers in your home.",
   },
   {
-    icon: ShieldCheck,
-    question: "What if the valuation doesn't match what I expected?",
+    icon: Shield,
+    question: "What happens to my photos after the assessment?",
     answer:
-      "Our reports include detailed explanations of how we arrived at the valuation, plus red flags to watch for. We also provide negotiation strategies regardless of whether the price seems high or low.",
+      "Your privacy is paramount. Photos are analyzed by our secure AI system and then permanently deleted within 24 hours. We never store, share, or use your images for any other purpose.",
   },
   {
-    icon: HelpCircle,
-    question: "Do I still need a lawyer or accountant after using ValuationGenie?",
+    icon: Users,
+    question: "Can I share the results with my family?",
     answer:
-      "ValuationGenie provides the financial analysis, but we always recommend having legal and tax professionals review any business purchase. Our reports actually help your advisors work more efficiently.",
+      "Absolutely! The report is designed for easy sharing and discussion. Many families use it to have productive conversations about safety improvements and to coordinate with contractors for implementation.",
   },
 ];
 
@@ -53,23 +53,23 @@ const FAQ = () => {
       className="min-h-screen flex items-center justify-center px-6 py-12 xs:py-20 bg-white"
     >
       <div className="max-w-screen-lg">
-        <h2 className="text-3xl xs:text-4xl md:text-5xl !leading-[1.15] font-bold tracking-tight text-center text-gray-900">
-          Common Questions from First-Time Buyers
+        <h2 className="text-headline-sm !leading-[1.15] font-extrabold tracking-tight text-center text-brand-text">
+          Common Questions About Home Safety Assessments
         </h2>
-        <p className="mt-3 xs:text-lg text-center text-gray-600">
-          Everything you need to know about business valuation and our AI-powered approach.
+        <p className="mt-3 text-body font-normal text-center text-brand-text/80">
+          Everything you need to know about AI-powered home safety assessments and aging in place.
         </p>
 
-        <div className="mt-12 grid md:grid-cols-2 bg-white rounded-xl overflow-hidden outline outline-[1px] outline-gray-200 outline-offset-[-1px]">
+        <div className="mt-12 grid md:grid-cols-2 bg-brand-accent rounded-xl overflow-hidden outline outline-[1px] outline-brand-accent outline-offset-[-1px] shadow-sm">
           {faq.map(({ question, answer, icon: Icon }) => (
-            <div key={question} className="border border-gray-200 bg-white p-6 -mt-px -ml-px">
-              <div className="h-8 w-8 xs:h-10 xs:w-10 flex items-center justify-center rounded-full bg-gray-100">
-                <Icon className="h-4 w-4 xs:h-6 xs:w-6 text-gray-700" />
+            <div key={question} className="border border-white/50 bg-white p-6 -mt-px -ml-px hover:shadow-md transition-shadow">
+              <div className="h-8 w-8 xs:h-10 xs:w-10 flex items-center justify-center rounded-full bg-brand-accent">
+                <Icon className="h-4 w-4 xs:h-6 xs:w-6 text-brand-primary" />
               </div>
-              <div className="mt-3 mb-2 flex items-start gap-2 text-lg xs:text-[1.35rem] font-semibold tracking-tight text-gray-900">
+              <div className="mt-3 mb-2 flex items-start gap-2 text-subheading-sm font-semibold tracking-tight text-brand-text">
                 <span>{question}</span>
               </div>
-              <p className="text-sm xs:text-base text-gray-600">{answer}</p>
+              <p className="text-body-sm font-normal text-brand-text/80">{answer}</p>
             </div>
           ))}
         </div>

@@ -12,8 +12,8 @@ import Link from 'next/link';
 import { Navbar } from "@/components/navbar";
 
 export const metadata = {
-  title: "WorthSnap Blog - Business Valuation Insights",
-  description: "Expert insights on business valuation, acquisition strategies, and tips for first-time business buyers.",
+  title: "SafeHomeScan Blog - Home Safety and Aging in Place Insights",
+  description: "Expert insights on home safety assessments, aging in place strategies, and tips for maintaining independence at home.",
 };
 
 export default function BlogPage() {
@@ -22,19 +22,19 @@ export default function BlogPage() {
   return (
     <>
       <Navbar />
-      <div className="bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white -mt-16 pt-32">
+      <div className="bg-gradient-to-br from-brand-primary via-brand-primary to-brand-secondary text-white -mt-16 pt-32">
         <div className="max-w-screen-xl mx-auto py-16 px-6 xl:px-0">
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
-              WorthSnap Blog
+            <h1 className="text-headline-sm font-extrabold tracking-tight mb-4">
+              SafeHomeScan Blog
             </h1>
-            <p className="text-xl text-blue-100 max-w-2xl mx-auto">
-              Expert insights on business valuation, acquisition strategies, and tips for first-time business buyers.
+            <p className="text-body font-normal text-blue-100 max-w-2xl mx-auto">
+              Expert insights on home safety assessments, aging in place strategies, and tips for maintaining independence at home.
             </p>
           </div>
 
           <div className="flex items-end justify-between mb-8">
-            <h2 className="text-3xl font-bold tracking-tight text-white">Posts</h2>
+            <h2 className="text-subheading font-semibold tracking-tight text-white">Posts</h2>
             <Select defaultValue="recommended">
               <SelectTrigger className="w-[180px] bg-white/10 border-white/20 text-white backdrop-blur-sm">
                 <SelectValue />
@@ -49,9 +49,9 @@ export default function BlogPage() {
 
           {posts.length === 0 ? (
             <div className="text-center py-16">
-              <h3 className="text-2xl font-semibold mb-4 text-white">No posts yet</h3>
-              <p className="text-blue-200">
-                Check back soon for valuable insights on business valuation and acquisition.
+              <h3 className="text-subheading font-semibold mb-4 text-white">No posts yet</h3>
+              <p className="text-blue-100 text-body-sm font-normal">
+                Check back soon for valuable insights on home safety and aging in place.
               </p>
             </div>
           ) : (
@@ -69,7 +69,7 @@ export default function BlogPage() {
                           />
                         ) : (
                           <div className="w-full h-full bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
-                            <span className="text-blue-600 font-semibold">WorthSnap</span>
+                            <span className="text-brand-primary text-body-sm font-semibold">SafeHomeScan</span>
                           </div>
                         )}
                       </div>
@@ -77,22 +77,22 @@ export default function BlogPage() {
                     <CardContent className="pt-4 pb-5">
                       <Badge className="bg-white/20 text-white border-white/20">{post.category}</Badge>
 
-                      <h3 className="mt-4 text-[1.35rem] font-semibold tracking-tight line-clamp-2 text-white">
+                      <h3 className="mt-4 text-subheading-sm font-semibold tracking-tight line-clamp-2 text-white">
                         {post.title}
                       </h3>
                       
                       {post.summary && (
-                        <p className="mt-2 text-sm text-blue-100 line-clamp-2">
+                        <p className="mt-2 text-body-sm font-normal text-blue-100 line-clamp-2">
                           {post.summary}
                         </p>
                       )}
 
                       <div className="mt-6 flex items-center justify-between">
-                        <span className="text-blue-100 font-semibold text-sm">
+                        <span className="text-blue-100 font-medium text-body-sm">
                           {post.author}
                         </span>
 
-                        <span className="text-blue-200 text-sm">
+                        <span className="text-blue-100 text-body-sm font-normal">
                           {new Date(post.published).toLocaleDateString('en-US', {
                             month: 'short',
                             day: 'numeric',

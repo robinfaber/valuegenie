@@ -9,45 +9,45 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "WorthSnap - AI-Powered Business Valuation Tool",
+  title: "SafeHomeScan - AI-Powered Home Safety Assessment for Aging in Place",
   description:
-    "Don't overpay $50K+ on your first business purchase. Get professional AI-powered business valuations and avoid costly mistakes.",
+    "Upload photos and get an AI-powered home safety assessment in minutes. Identify hidden fall risks and safety hazards before accidents happen. Perfect for aging in place safely.",
   keywords: [
-    "WorthSnap",
-    "Business Valuation",
-    "AI Business Valuation",
-    "First Time Business Buyer",
-    "Business Acquisition",
-    "Business Analysis",
-    "Online Business Valuation",
-    "Business Worth Calculator",
-    "Due Diligence",
-    "Business Investment",
+    "SafeHomeScan",
+    "Home Safety Assessment",
+    "Aging in Place",
+    "AI Safety Analysis",
+    "Fall Prevention",
+    "Home Safety Audit",
+    "Senior Home Safety",
+    "Home Hazard Detection",
+    "Independent Living",
+    "Home Safety Report",
   ],
   openGraph: {
     type: "website",
-    siteName: "WorthSnap",
+    siteName: "SafeHomeScan",
     locale: "en_US",
-    url: "https://worthsnap.com",
-    title: "WorthSnap - AI-Powered Business Valuation Tool",
+    url: "https://safehomescan.com",
+    title: "SafeHomeScan - AI-Powered Home Safety Assessment for Aging in Place",
     description:
-      "Don't overpay $50K+ on your first business purchase. Get professional AI-powered business valuations and avoid costly mistakes.",
+      "Upload photos and get an AI-powered home safety assessment in minutes. Identify hidden fall risks and safety hazards before accidents happen. Perfect for aging in place safely.",
     images: [
       {
         url: "/favicon-blue.svg",
         width: 512,
         height: 512,
-        alt: "WorthSnap Logo",
+        alt: "SafeHomeScan Logo",
       },
     ],
   },
   authors: [
     {
-      name: "WorthSnap Team",
-      url: "https://worthsnap.com",
+      name: "SafeHomeScan Team",
+      url: "https://safehomescan.com",
     },
   ],
-  creator: "WorthSnap",
+  creator: "SafeHomeScan",
   icons: [
     {
       rel: "icon",

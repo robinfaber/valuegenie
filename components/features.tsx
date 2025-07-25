@@ -1,58 +1,58 @@
 import {
-  Bot,
-  ShieldCheck,
-  MessageSquare,
-  BarChart3,
+  Brain,
+  Lock,
+  Home,
+  ClipboardList,
 } from "lucide-react";
 import React from "react";
 
 const features = [
   {
-    icon: Bot,
-    title: "AI-powered valuation engine",
+    icon: Brain,
+    title: "AI Hazard Detection",
     description:
-      "Advanced algorithms analyze 15+ financial metrics, industry benchmarks, and market trends to provide accurate business valuations in minutes.",
+      "Our AI spots fall risks and safety issues that are easy to overlook in familiar spaces, identifying potential hazards before they cause accidents.",
   },
   {
-    icon: ShieldCheck,
-    title: "Risk assessment for beginners",
+    icon: Lock,
+    title: "Private & Convenient",
     description:
-      "Get a comprehensive risk score with detailed explanations of potential red flags and deal-breakers before you commit.",
+      "Assess your home on your schedule without scheduling appointments or home visits. Complete privacy with no strangers required.",
   },
   {
-    icon: MessageSquare,
-    title: "Custom negotiation talking points",
+    icon: Home,
+    title: "Room-by-Room Analysis",
     description:
-      "Receive personalized negotiation strategies and key talking points to help you secure better deals with confidence.",
+      "Comprehensive review of your bathroom, kitchen, stairs, and living areas to ensure every space supports safe aging in place.",
   },
   {
-    icon: BarChart3,
-    title: "Comparable sales analysis",
+    icon: ClipboardList,
+    title: "Clear Action Plan",
     description:
-      "Access recent sales data of similar businesses in your area and industry to validate asking prices and market conditions.",
+      "Specific recommendations with cost estimates so you can prioritize improvements and make informed decisions about your home safety.",
   },
 ];
 
 const Features = () => {
   return (
-    <div id="features" className="w-full py-12 xs:py-20 px-6 bg-white">
-      <h2 className="text-3xl xs:text-4xl sm:text-5xl font-bold tracking-tight text-center text-gray-900">
-        Get professional analysis in minutes, not weeks
+    <div id="features" className="w-full py-12 xs:py-20 px-6 bg-brand-accent">
+      <h2 className="text-headline-sm font-extrabold tracking-tight text-center text-brand-text">
+        Comprehensive home safety assessment made simple
       </h2>
-      <p className="text-center text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
-        Everything you need to make confident buying decisions and avoid costly mistakes
+      <p className="text-center text-body font-normal text-brand-text/80 mt-4 max-w-2xl mx-auto">
+        Identify fall risks and safety hazards in your home with AI-powered analysis and expert recommendations
       </p>
       <div className="w-full max-w-screen-lg mx-auto mt-10 sm:mt-16 grid sm:grid-cols-2 gap-6">
         {features.map((feature) => (
           <div
             key={feature.title}
-            className="flex flex-col bg-white border border-gray-200 rounded-xl py-6 px-5"
+            className="flex flex-col bg-white border border-brand-accent rounded-xl py-6 px-5 shadow-sm hover:shadow-md transition-shadow"
           >
-            <div className="mb-3 h-10 w-10 flex items-center justify-center bg-gray-100 rounded-full">
-              <feature.icon className="h-6 w-6 text-gray-700" />
+            <div className="mb-3 h-10 w-10 flex items-center justify-center bg-brand-accent rounded-full">
+              <feature.icon className="h-6 w-6 text-brand-primary" />
             </div>
-            <span className="text-lg font-semibold text-gray-900">{feature.title}</span>
-            <p className="mt-1 text-gray-600 text-[15px]">
+            <span className="text-subheading-sm font-semibold text-brand-text">{feature.title}</span>
+            <p className="mt-1 text-brand-text/80 text-body-sm font-normal">
               {feature.description}
             </p>
           </div>

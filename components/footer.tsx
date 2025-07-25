@@ -4,11 +4,11 @@ const Footer = () => {
   return (
     <footer className="relative z-10 -mt-32 text-white">
       <div className="max-w-screen-xl mx-auto">
-        <Separator className="border-blue-500/20" />
+        <Separator className="border-brand-secondary/20" />
         <div className="py-8 flex flex-col-reverse sm:flex-row items-center justify-between gap-x-2 gap-y-5 px-6 xl:px-0">
           {/* Copyright */}
-          <span className="text-blue-200 text-center sm:text-start">
-            &copy; {new Date().getFullYear()} WorthSnap. All rights reserved.
+          <span className="text-blue-100 text-center sm:text-start text-body-sm font-normal">
+            &copy; {new Date().getFullYear()} SafeHomeScan. All rights reserved.
           </span>
 
           {/* <div className="flex items-center gap-5 text-blue-200">

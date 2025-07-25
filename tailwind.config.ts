@@ -10,7 +10,27 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+      },
+      fontSize: {
+        'headline': ['3.5rem', { lineHeight: '1.1', fontWeight: '800' }], // 56px
+        'headline-sm': ['3rem', { lineHeight: '1.1', fontWeight: '800' }], // 48px
+        'subheading': ['1.75rem', { lineHeight: '1.3', fontWeight: '600' }], // 28px
+        'subheading-sm': ['1.5rem', { lineHeight: '1.3', fontWeight: '600' }], // 24px
+        'body': ['1.25rem', { lineHeight: '1.6', fontWeight: '400' }], // 20px
+        'body-sm': ['1.125rem', { lineHeight: '1.6', fontWeight: '400' }], // 18px
+        'button': ['1.125rem', { lineHeight: '1.4', fontWeight: '500' }], // 18px
+      },
       colors: {
+        // Custom brand colors
+        brand: {
+          primary: '#2D5B69',
+          secondary: '#4A8B9B', 
+          accent: '#E8F4F8',
+          text: '#2C3E50',
+        },
+        // Updated system colors to use new palette
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
